@@ -26,14 +26,14 @@ yarn global add vercel
 yarn
 
 # Build project
-vercel dev
+vercel dev --listen 3002
 ```
 
 Endpoints are based on filename inside the `api/` folder.
 
 ```shell
 # api/pairs.ts
-curl -X GET 'localhost:3000/api/pairs'
+curl -X GET 'localhost:3002/api/pairs'
 
 # ...
 ```
